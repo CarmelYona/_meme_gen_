@@ -1,0 +1,50 @@
+@media (max-width:1020px) {
+    .logo {
+        height: 60%;
+        width: 40%;
+    }
+}
+
+@media (max-width:640px) {
+    header {
+        height: 60px;
+    }
+    .logo {
+        margin-left: 7px;
+        margin-top: 14px;
+    }
+    .gallery {
+        gap: 5px;
+        margin: auto;
+        margin-inline-start: 12%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    footer {
+        display: none;
+    }
+    .gallery-header {
+        font-size: 30px;
+    }
+    .data-list {
+        width: 20%;
+    }
+    .editor-and-canvas {
+        display: flex;
+        flex-direction: column;
+        margin-left: 55px;
+    }
+    canvas {
+        height: 205px;
+        width: 205px;
+        margin: auto;
+    }
+    .editor {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    .txt-input {
+        width: 10rem;
+    }
+}

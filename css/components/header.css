@@ -1,0 +1,21 @@
+header {
+    background-color: darkblue;
+    height: 90px;
+    color: #fff;
+    font-family: latobold, sans-serif;
+    box-shadow: inset 0px -6px 0 #001dda;
+}
+
+.logo {
+    height: 58%;
+    width: 28%;
+    margin-block-start: 10px;
+    margin-left: 22px;
+    margin-top: 32px;
+}
+
+.logo img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}

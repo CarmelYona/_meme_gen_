@@ -1,0 +1,16 @@
+/* base */
+
+@import './basic/base.css';
+@import './basic/helpers.css';
+
+/* component */
+
+@import './components/gallery.css';
+@import './components/footer.css';
+@import './components/header.css';
+@import './components/canvas.css';
+@import './components/editor.css';
+
+/* responsive */
+
+@import './mq/mq.css'

@@ -1,0 +1,58 @@
+.edits-container {
+    display: none;
+}
+
+.editor {
+    background-color: rgb(21, 21, 75);
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+}
+
+button {
+    color: rgb(6, 1, 1);
+    border: 0;
+    border-radius: .2em;
+    font: bold;
+    background-color: #222;
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(47, 255, 20);
+}
+
+button .icon {
+    height: 00.8rem;
+    width: 00.8rem;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.icon img:hover {
+    transform: scale(0.95, 0.95);
+    background-color: rgb(47, 255, 20);
+}
+
+.edits-container h2 {
+    color: #333333;
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 0px;
+    margin-right: 10px;
+}
+
+.span {
+    color: #333333;
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+}
+
+.color-input {
+    height: 5rem;
+    width: 5rem;
+}

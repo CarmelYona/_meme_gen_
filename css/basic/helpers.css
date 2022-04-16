@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.inputs {
+    border: 4px solid white;
+    border-radius: 17px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.txt-input {
+    width: 17rem;
+    height: 1rem;
+}
+
+.inputs:hover {
+    transform: scale(0.95, 0.95);
+}
+
+select {
+    /* height: 15px; */
+    font-size: medium;
+    color: black;
+}

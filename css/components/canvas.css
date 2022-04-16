@@ -1,0 +1,9 @@
+.edits-container {
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+canvas {
+    border: 1px solid black;
+    grid-column: 1/2;
+}

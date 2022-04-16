@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMEJEN</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <div class="logo"><img src="logo/logo.png"></div>
+    </header>
+    <main>
+        <section class="gallery-container">
+            <div class="gallery-nav">
+                <div class="gallery-header display-inline">Meme Gallery</div>
+                <input placeholder="Filter" oninput="onSearch()" class="txt-input inputs" type="text" list="data-list" name="search">
+                <datalist id="data-list">
+                    <option value="happy">happy</option>
+                    <option value="funny">funny</option>
+                    <option value="movie">movie</option>
+                    <option value="man">man</option>
+                    <option value="prime minister">prime minister</option>
+                    <option value="dog">dog</option>
+                    <option value="cute">cute</option>
+                    <option value="fighter">fighter</option>
+                    <option value="dark">dark</option>
+                    <option value="drink">drink</option>
+                    <option value="victory">victory</option>
+                    <option value="angry">angry</option>
+                </datalist>
+            </div>
+
+            <div class=" gallery grid">
+
+            </div>
+        </section>
+
+        <section class="edits-container">
+            <h2>Editor</h2>
+            <div class="editor-and-canvas flex">
+
+                <div class="canvas-container ">
+                    <canvas id="my-canvas" height="400" width="400"></canvas>
+                </div>
+
+                <div class="editor">
+                    <form onsubmit="onSubmit(event)">
+                        <input onkeyup=" handleKey(event)" class="txt-input inputs" oninput='onSetLineText(this)' placeholder='Write Something' type="text" id="txt" name="txt" size="30">
+                        <br>
+                        <button onclick="onSwichLine()" class='btn btn-switch'>⮁</button>
+                        <button onclick="onAddLine()" class='btn btn-plus'>➕</button>
+                        <button onclick="clearCanvas()" class='btn btn-delete'>🗑️</button>
+                        <br>
+                        <button onclick="onSetSize(5)" class='btn btn-bigger'>🗚</button>
+                        <button onclick="onSetSize(-5)" class='btn btn-lower'>🗛</button>
+                        <button onclick="onSetAline('right')" class='btn btn-right'><img class="icon" src="icon/0.png" alt=""></button>
+                        <button onclick="onSetAline('center')" class='btn btn-center'><img  class="icon" src="icon/1.png" alt=""></button>
+                        <button onclick="onSetAline('left')" class='btn btn-left'><img  class="icon" src="icon/2.png" alt=""></button>
+                        <br>
+                        <select class="inputs" onchange="onSetFont(this)" name="Font">
+                        <option value="none">Font</option>
+                        <option value="impact">Impact</option>
+                        <option value="Ariel">Ariel</option>
+                        
+                    </select>
+                        <br>
+                        <input class="inputs color-input" id="color-input" oninput="onSetStrokeColor(this)" type="color" name="stroke-color" value="#000000"><span class="span">S</span>
+                        <input class="inputs color-input" oninput="onSetFillColor(this)" type="color" name="fill-color" value="#000000"><span class="span">F</span>
+                    </form>
+                    <div>
+                        <button onclick=" downloadCanvas(this)" download="eldar.jpg"> <a href="#" onclick="downloadCanvas(this)" download="eldar.jpg">Download</a></button>
+                        <button class="btn" onclick="uploadImg()">Facebook</button>
+                        <p class="user-msg"></p>
+                        <div class="share-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            © Carmel Yona 2022
+        </div>
+    </footer>
+
+    <script src="js/service/util.js"></script>
+    <script src="js/service/storage.service.js"></script>
+    <script src="js/gallery/gallery-service.js"></script>
+    <script src="js/gallery/gallery-controller.js"></script>
+    <script src="js/meme/meme-service.js"></script>
+    <script src="js/meme/meme-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.gallery-container {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery {
+    gap: 5px;
+    margin-inline-start: 12%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery img {
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 6px solid rgb(84, 83, 86);
+}
+
+.gallery img:hover {
+    transform: scale(0.95, 0.95);
+}
+
+.gallery-nav {
+    margin-left: 50px;
+    position: relative;
+    padding: 13px;
+}
+
+.gallery-header {
+    color: #333333;
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 54px;
+    margin-right: 10px;
+}

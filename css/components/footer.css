@@ -1,0 +1,14 @@
+footer {
+    background-color: darkblue;
+    box-shadow: inset 0px -6px 0 #001dda;
+    margin-top: 46px;
+}
+
+.copyright {
+    color: #f0dfdf;
+    font-family: 'Bitter', serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 54px;
+    margin-right: 10px;
+}

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: gray;
+    display: grid;
+}
+
+main {
+    max-height: 59vw;
+    max-width: 90vw;
+    margin-bottom: 3%;
+}
